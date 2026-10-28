@@ -56,6 +56,14 @@ Start with [the model and exact claims](science/model.md). The scientific accoun
 
 [The LLM reading guide](llms.txt) maps reader questions to these authoritative pages.
 
+## Learn the project
+
+The single educational anchor is **John Watrous, [*The Theory of Quantum Information* (2018)](https://cs.uwaterloo.ca/~watrous/TQI/)**. The [Watrous bridge](learning/WATROUS_BRIDGE.md) points to the relevant sections of the author's available manuscript, translates its notation and fidelity convention, and develops the additional charge-constrained arguments used here.
+
+The [30-milestone map](learning/MILESTONES.md) gives a common route through the project. Its **12 background/preliminaries milestones** connect quantum states, channels, entanglement, symmetry, and error accounting into the operational task. Its **18 narrative/innovation milestones** connect the physical Haar comparison, coherent protocol, complete-outcome converse, finite certificates, and asymptotic cost laws. Each milestone records a central question, an understanding target, earlier dependencies, a conceptual connection, and scientific source pointers.
+
+Use the bridge alongside the map for self-directed study. The topic pages under `science/` remain the authoritative statements and proofs; the primary research references provide attribution and the ingredients beyond the textbook.
+
 ## Reproduce the finite checks
 
 From the repository root:
