@@ -16,9 +16,17 @@ This repository determines the optimal hard net charge exchange for neutral-targ
 - Structured source identities and versions: references/references.bib
 - Executed finite verification, commands, expected outputs and numerical tolerance: verification/README.md
 
+## Learning routes
+
+- The single educational anchor is John Watrous, The Theory of Quantum Information (2018), using the author's available manuscript for section pointers.
+- learning/MILESTONES.md: the canonical learner-independent map M01-M30, with 12 background/preliminaries and 18 narrative/innovation milestones, ordered dependencies, understanding targets, conceptual connections, and scientific references.
+- learning/WATROUS_BRIDGE.md: verified source sections, notation and fidelity conventions, and the missing steps from textbook foundations to the charge budget, coherent extraction, all-branch converse, finite optimum, and typical-state asymptotics.
+
 ## Reading suggestions
 
 For the scientific story, read model, interpretation, coherent_protocol, converse, then asymptotics and typical_states. For a proof audit, start from model, follow finite_optimization to the constructive and converse pages, and then inspect typical_states and asymptotics. For numerical reproduction, use verification/README.md and run verification/run_all.py from the repository root.
+
+For self-directed study, follow learning/MILESTONES.md alongside learning/WATROUS_BRIDGE.md. Use each milestone's scientific pointers to reach the full argument. The common map describes the project and is independent of a particular reader's background or progress. To replay committed numerical witnesses without optimization, use the verify_saved.py command in verification/README.md.
 
 ## Essential distinctions
 
@@ -32,5 +40,6 @@ For the scientific story, read model, interpretation, coherent_protocol, convers
 - The Gaussian unrestricted capacity and generic superselection-rule conversion machinery are attributed prior work.
 - At S of order sqrt(L), the capacity theorem is leading order; do not invent an exact constant-order Gaussian boundary law.
 - No efficient compilation, unknown-state decoder, equal-cut theorem, half-filled growing yield, or unconditional dynamical theorem is established.
+- Watrous supplies the single educational foundation. The charge-budget theorem and its project-specific derivations are in this repository; the necessary primary research sources remain distinct from the educational anchor.
 
 Use the topic pages as the authority for a claim rather than inferring a stronger statement from the README or a numerical example.

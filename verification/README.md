@@ -131,7 +131,7 @@ The record also includes the unrestricted Gaussian asymptotic expression for ori
 - [finite_model.py](finite_model.py): exact rational kernels, simplex and dual optimization, feasible-filter reconstruction, directed-rounding certificates, and physical hypergeometric support checks.
 - [verify_protocol.py](verify_protocol.py): direct Kraus matrices and coherent-output checks.
 - [run_all.py](run_all.py): reproducible collection of the finite checks and certificates.
-- [verify_saved.py](verify_saved.py): independent replay of the saved numerical witnesses without optimization.
+- [verify_saved.py](verify_saved.py): replay of the saved numerical witnesses without optimization, using the same certificate routine.
 - [reference_results.json](reference_results.json): full recorded results and witnesses.
 
 For the analytical statements that these calculations support, see [finite optimization](../science/finite_optimization.md), [the coherent protocol](../science/coherent_protocol.md), [the converse](../science/converse.md), and [the asymptotic limits](../science/asymptotics.md).
