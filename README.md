@@ -34,7 +34,7 @@ This capacity convergence is also in probability over the Haar catalyst. The flu
 |---|---|
 | Exactly flat charge blocks, $S=0$ | Exact finite-size identity $[F^\star(m,0)]^2=1/m$. |
 | Fixed $S$ and $m$ | The limiting fidelity above, including its threshold equality. |
-| Diverging $S=o(\sqrt L)$ | Leading yield $B_{\epsilon,L}(S)/S\to |\mu|/\ln2$. |
+| Diverging $S=o(\sqrt L)$ | Leading yield $B_{\epsilon,L}(S)/S\to \lvert\mu\rvert/\ln2$. |
 | $S$ on the fluctuation scale | The minimum of the exchange-limited yield and the known unrestricted capacity. |
 | General finite flat-block catalyst | Exact fidelity optimization and matching primal/dual certificates. |
 
