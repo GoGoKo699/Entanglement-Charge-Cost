@@ -16,7 +16,7 @@ F_{\max}^2(m,S)\longrightarrow
 \min\{1,e^{|\mu|S}/m\},
 \qquad \mu=\ln[(1-\nu)/\nu],
 ```
-for fixed $S,m$, together with the leading growing-budget capacity.
+for fixed $`S,m`$, together with the leading growing-budget capacity.
 The [asymptotic note](../science/asymptotics.md) states the limits and their
 precise scope. This document identifies which ingredients are established
 results and which operational statement is added here.
@@ -38,7 +38,7 @@ and borrowing yield. The final discussion explicitly leaves charge-respecting
 extraction open.
 
 The present result supplies the optimal supported charge exchange and a
-matching extraction protocol. The $\sqrt L$ resource, its unrestricted
+matching extraction protocol. The $`\sqrt L`$ resource, its unrestricted
 Gaussian coefficient, and its hydrodynamic interpretation are credited to
 that work. We prove no dynamical circuit theorem here.
 
@@ -98,7 +98,7 @@ how a broad number distribution can hide a finite change in its mean.
 Thus number-conserving embezzlement, and the compatibility of broad
 charge distributions with finite shifts, are established phenomena.
 The typical Haar marginal considered here has approximately constant
-one-particle covariance $\nu I$, so its mechanism is not an application
+one-particle covariance $`\nu I`$, so its mechanism is not an application
 of the dense-covariance criterion. The question here is an optimal hard
 charge budget for the full many-body spectrum.
 

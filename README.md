@@ -2,11 +2,11 @@
 
 **How much conserved charge must local operations exchange to borrow entanglement from a typical many-body state?** This project determines the optimal hard net exchange budget for typical fixed-particle-number pure states across an unequal bipartition.
 
-Alice and Bob know the catalyst state and use charge-respecting local instruments, classical communication, and initially charge-incoherent local buffers. They borrow a neutral maximally entangled target while returning the **entire catalyst and target** close to their desired product state. Every outcome counts. The budget $S$ bounds the absolute net change of Alice's catalyst charge in each complete charge-resolved outcome; the constructions obey the same bound for Bob.
+Alice and Bob know the catalyst state and use charge-respecting local instruments, classical communication, and initially charge-incoherent local buffers. They borrow a neutral maximally entangled target while returning the **entire catalyst and target** close to their desired product state. Every outcome counts. The budget $`S`$ bounds the absolute net change of Alice's catalyst charge in each complete charge-resolved outcome; the constructions obey the same bound for Bob.
 
 ## Principal results
 
-Take a fixed filling $0<\nu<1$, $\nu\ne1/2$, and an Alice fraction $0<f<1/2$. Put $\mu=\ln[(1-\nu)/\nu]$. For every fixed target dimension $m$ and integer budget $S$, the optimal squared fidelity of a typical fixed-charge Haar catalyst satisfies
+Take a fixed filling $`0<\nu<1`$, $`\nu\ne1/2`$, and an Alice fraction $`0<f<1/2`$. Put $`\mu=\ln[(1-\nu)/\nu]`$. For every fixed target dimension $`m`$ and integer budget $`S`$, the optimal squared fidelity of a typical fixed-charge Haar catalyst satisfies
 
 ```math
 [F_L^\star(m,S)]^2
@@ -14,9 +14,9 @@ Take a fixed filling $0<\nu<1$, $\nu\ne1/2$, and an Alice fraction $0<f<1/2$. Pu
 \min\left\{1,\frac{e^{|\mu|S}}{m}\right\}.
 ```
 
-Convergence is in probability as the number of sites $L$ grows. The equality case $m=e^{|\mu|S}$ is included. At quarter filling, one unit of exchange permits a Bell pair or a maximally entangled qutrit pair with error tending to zero. With zero exchange, the limiting squared fidelity is only $1/m$.
+Convergence is in probability as the number of sites $`L`$ grows. The equality case $`m=e^{|\mu|S}`$ is included. At quarter filling, one unit of exchange permits a Bell pair or a maximally entangled qutrit pair with error tending to zero. With zero exchange, the limiting squared fidelity is only $`1/m`$.
 
-For a fixed purified-error tolerance $0<\epsilon<1$ and $S_L/\sqrt L\to\alpha\in[0,\infty]$, the borrowable entanglement in ebits is
+For a fixed purified-error tolerance $`0<\epsilon<1`$ and $`S_L/\sqrt L\to\alpha\in[0,\infty]`$, the borrowable entanglement in ebits is
 
 ```math
 B_{\epsilon,L}(S_L)
@@ -32,10 +32,10 @@ This capacity convergence is also in probability over the Haar catalyst. The flu
 
 | Regime | What is established |
 |---|---|
-| Exactly flat charge blocks, $S=0$ | Exact finite-size identity $[F^\star(m,0)]^2=1/m$. |
-| Fixed $S$ and $m$ | The limiting fidelity above, including its threshold equality. |
-| Diverging $S=o(\sqrt L)$ | Leading yield $B_{\epsilon,L}(S)/S\to \lvert\mu\rvert/\ln2$. |
-| $S$ on the fluctuation scale | The minimum of the exchange-limited yield and the known unrestricted capacity. |
+| Exactly flat charge blocks, $`S=0`$ | Exact finite-size identity $`[F^\star(m,0)]^2=1/m`$. |
+| Fixed $`S`$ and $`m`$ | The limiting fidelity above, including its threshold equality. |
+| Diverging $`S=o(\sqrt L)`$ | Leading yield $`B_{\epsilon,L}(S)/S\to \lvert\mu\rvert/\ln2`$. |
+| $`S`$ on the fluctuation scale | The minimum of the exchange-limited yield and the known unrestricted capacity. |
 | General finite flat-block catalyst | Exact fidelity optimization and matching primal/dual certificates. |
 
 ## Read the science

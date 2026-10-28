@@ -28,9 +28,9 @@ Work first with a physically valid block-flat catalyst
 
 with the dimension and basis conventions of
 [coherent extraction](coherent_protocol.md). The target is
-$|\tau\rangle=|\Omega\rangle\otimes|\Phi_m\rangle$. Its charge-$q$
-component is a maximally entangled vector $|\Theta_q\rangle$ of rank
-$m d_q$, with amplitude $\sqrt{p_q}$.
+$`|\tau\rangle=|\Omega\rangle\otimes|\Phi_m\rangle`$. Its charge-$`q`$
+component is a maximally entangled vector $`|\Theta_q\rangle`$ of rank
+$`m d_q`$, with amplitude $`\sqrt{p_q}`$.
 
 Resolve every local instrument using its charge-conserving dilation.
 A charge-incoherent initial ancilla can be diagonalized inside each of its
@@ -42,7 +42,7 @@ refinement. No experimenter needs to observe these additional labels; a
 Kraus refinement leaves the reduced output density operator unchanged.
 
 Conditioning on all earlier classical outcomes, compose the local Kraus
-operators along each complete leaf $r$. Its operator on the two input
+operators along each complete leaf $`r`$. Its operator on the two input
 catalysts is a product
 
 ```math
@@ -52,7 +52,7 @@ M_r=A_r\otimes B_r,
 \tag{2}
 ```
 
-Preparation of the neutral target registers is absorbed into $A_r,B_r$.
+Preparation of the neutral target registers is absorbed into $`A_r,B_r`$.
 Their charge shifts add along the leaf, so
 
 ```math
@@ -62,15 +62,15 @@ Q_B^{\rm out}B_r-B_rQ_B^{\rm in}=k_{B,r}B_r.
 \tag{3}
 ```
 
-The hard budget is $|k_{A,r}|\le S$ on every complete leaf. It is a
+The hard budget is $`|k_{A,r}|\le S`$ on every complete leaf. It is a
 constraint on the net shift (3); intermediate shifts need not individually
 obey it. The proof places no bound on the number of rounds, the number of
 Kraus operators, or the intermediate ancilla dimension.
 
-A leaf with $k_{A,r}+k_{B,r}\ne0$ has retained total charge different
-from $N$, and hence zero overlap with $|\tau\rangle$. Its probability
+A leaf with $`k_{A,r}+k_{B,r}\ne0`$ has retained total charge different
+from $`N`$, and hence zero overlap with $`|\tau\rangle`$. Its probability
 is still included in (2) and in the output. For an overlap-bearing leaf
-write $k_r=k_{A,r}=-k_{B,r}$. Finite or countable sums below also cover
+write $`k_r=k_{A,r}=-k_{B,r}`$. Finite or countable sums below also cover
 classical randomization and almost-surely terminating adaptive protocols.
 The inequalities are continuous in the reduced channel and therefore hold
 for the limits of finite-round admissible protocols included in the model.
@@ -93,8 +93,8 @@ is incompatible with the target. Trace preservation gives
 ```
 
 **Rank-overlap bound.** If an unnormalized bipartite vector has Schmidt rank
-at most $d$, squared norm $t$, and is compared with a normalized
-maximally entangled vector of rank $D$, its overlap has modulus at most
+at most $`d`$, squared norm $`t`$, and is compared with a normalized
+maximally entangled vector of rank $`D`$, its overlap has modulus at most
 
 ```math
 \sqrt{t}\,\sqrt{\min\{1,d/D\}}.
@@ -102,16 +102,16 @@ maximally entangled vector of rank $D$, its overlap has modulus at most
 ```
 
 To prove (6), project the vector onto the local supports of the target and
-write its coefficient matrix as $X$. Projection cannot increase its rank
+write its coefficient matrix as $`X`$. Projection cannot increase its rank
 or Hilbert–Schmidt norm. The target overlap is
-$\operatorname{Tr}X/\sqrt D$, up to conjugation of the chosen bases.
+$`\operatorname{Tr}X/\sqrt D`$, up to conjugation of the chosen bases.
 The nuclear-norm inequality
-$|\operatorname{Tr}X|\le\|X\|_*\le\sqrt d\,\|X\|_2$, together with
-the ordinary Cauchy–Schwarz bound $\sqrt t$, proves the claim.
+$`|\operatorname{Tr}X|\le\|X\|_*\le\sqrt d\,\|X\|_2`$, together with
+the ordinary Cauchy–Schwarz bound $`\sqrt t`$, proves the claim.
 
 A product Kraus operator cannot increase the Schmidt rank of the input
-block. In an overlap-bearing leaf the block with input charge $q$ can
-overlap only the target block $q+k_r$. Define
+block. In an overlap-bearing leaf the block with input charge $`q`$ can
+overlap only the target block $`q+k_r`$. Define
 
 ```math
 c_{q,k}=\sqrt{\min\left\{1,\frac{d_q}{m d_{q+k}}\right\}}
@@ -119,7 +119,7 @@ c_{q,k}=\sqrt{\min\left\{1,\frac{d_q}{m d_{q+k}}\right\}}
 \tag{7}
 ```
 
-and set its weighted contribution to zero when $p_{q+k}=0$. Equation
+and set its weighted contribution to zero when $`p_{q+k}=0`$. Equation
 (6) and the triangle inequality give the complete branch-amplitude bound
 
 ```math
@@ -130,7 +130,7 @@ and set its weighted contribution to zero when $p_{q+k}=0$. Equation
 ```
 
 This already allows arbitrary charge-dependent filtering: its effect is
-contained in $t_{r,q}$, which need not be independent of $q$. Because
+contained in $`t_{r,q}`$, which need not be independent of $`q`$. Because
 the reference target is pure, the complete output satisfies
 
 ```math
@@ -142,9 +142,9 @@ No conditional success probability is removed from (9).
 
 ## 3. A uniform bound with an input tail
 
-Let $G\subseteq\mathcal Q$ have probability $1-\eta$. Suppose a
-constant $c_G\in[0,1]$ bounds $c_{q,k}$ for every $q\in G$ and
-every allowed $|k|\le S$ with nonzero target weight. Then every admissible
+Let $`G\subseteq\mathcal Q`$ have probability $`1-\eta`$. Suppose a
+constant $`c_G\in[0,1]`$ bounds $`c_{q,k}`$ for every $`q\in G`$ and
+every allowed $`|k|\le S`$ with nonzero target weight. Then every admissible
 protocol obeys
 
 ```math
@@ -156,7 +156,7 @@ F(\rho_{\rm out},\tau)
 
 An overall upper bound of one may of course be imposed as well.
 
-For the proof, first keep only the source terms in $G$. For each
+For the proof, first keep only the source terms in $`G`$. For each
 overlap-bearing leaf, Cauchy–Schwarz in (8) yields
 
 ```math
@@ -169,20 +169,20 @@ overlap-bearing leaf, Cauchy–Schwarz in (8) yields
 ```
 
 Sum over leaves and use (5). This bounds the Euclidean norm of the vector
-$(z_r^G)_r$ by $c_G\sqrt{1-\eta}$.
+$`(z_r^G)_r`$ by $`c_G\sqrt{1-\eta}`$.
 
 For the source tail, use the isometry
-$V=\sum_rM_r\otimes|r\rangle$ supplied by (2). The tail vector in (1)
-has norm $\sqrt\eta$. Applying $V$, and then the contraction
-$\langle\tau|\otimes I$, shows that the Euclidean norm of its branch
-amplitudes is at most $\sqrt\eta$. The triangle inequality for these
+$`V=\sum_rM_r\otimes|r\rangle`$ supplied by (2). The tail vector in (1)
+has norm $`\sqrt\eta`$. Applying $`V`$, and then the contraction
+$`\langle\tau|\otimes I`$, shows that the Euclidean norm of its branch
+amplitudes is at most $`\sqrt\eta`$. The triangle inequality for these
 two vectors gives (10). The argument works with any number of leaves and
 does not multiply the tail by an outcome count.
 
 ### Exact zero-exchange identity
 
-At $S=0$, every overlap-bearing leaf has $k_r=0$, so
-$c_{q,0}=1/\sqrt m$ for every populated block. Choose $G=\mathcal Q$
+At $`S=0`$, every overlap-bearing leaf has $`k_r=0`$, so
+$`c_{q,0}=1/\sqrt m`$ for every populated block. Choose $`G=\mathcal Q`$
 in (10). This proves
 
 ```math
@@ -190,7 +190,7 @@ in (10). This proves
 ```
 
 Doing nothing to the catalyst and leaving the target in a product basis
-state attains overlap $1/\sqrt m$. Therefore
+state attains overlap $`1/\sqrt m`$. Therefore
 
 ```math
 \boxed{[F^\star(m,0;\Omega)]^2=\frac1m.}
@@ -211,7 +211,7 @@ A_{kq}=\sqrt{p_qp_{q+k}}\,c_{q,k},
 \tag{13}
 ```
 
-with $A_{kq}=0$ if the target weight vanishes. For each shift $k$, group
+with $`A_{kq}=0`$ if the target weight vanishes. For each shift $`k`$, group
 the overlap-bearing leaves and set
 
 ```math
@@ -227,9 +227,9 @@ group gives
 \tag{14}
 ```
 
-The columns initially satisfy $\sum_kT_{kq}\le1$, rather than necessarily
+The columns initially satisfy $`\sum_kT_{kq}\le1`$, rather than necessarily
 equality: leaves with the wrong total charge have zero fidelity but can
-have nonzero probability. Add the missing column mass to $k=0$, which
+have nonzero probability. Add the missing column mass to $`k=0`$, which
 is always physically possible. Nonnegativity of every coefficient means
 this cannot decrease the right-hand side of the resulting objective.
 Thus every protocol is bounded by
@@ -251,8 +251,8 @@ compressed formulation are developed in [finite optimization](finite_optimizatio
 
 Use the fixed parameters and integer sequences of
 [the asymptotic analysis](asymptotics.md):
-$n_L=\lfloor fL\rfloor$, $N_L=\lfloor\nu L\rfloor$,
-$\nu_L=N_L/L$, $\bar q_L=n_L\nu_L$, and
+$`n_L=\lfloor fL\rfloor`$, $`N_L=\lfloor\nu L\rfloor`$,
+$`\nu_L=N_L/L`$, $`\bar q_L=n_L\nu_L`$, and
 
 ```math
 a_{L,q}=\binom{n_L}{q},\qquad
@@ -263,9 +263,9 @@ a_{L,q}=\binom{n_L}{q},\qquad
 
 Exact integer-compatible sequences are a special case. The physical
 comparison state is normalized on the fixed linear window from
-[typical states](typical_states.md), with $d_q=a_{L,q}$. In the smaller
-windows used below, both $q$ and every considered $q+k$ lie inside
-that physical window for sufficiently large $L$.
+[typical states](typical_states.md), with $`d_q=a_{L,q}`$. In the smaller
+windows used below, both $`q`$ and every considered $`q+k`$ lie inside
+that physical window for sufficiently large $`L`$.
 
 The adjacent-binomial identity
 
@@ -274,7 +274,7 @@ The adjacent-binomial identity
 =\ln\frac{n_L-u}{u+1}
 ```
 
-gives, uniformly whenever $|q-\bar q_L|+|k|=o(L)$,
+gives, uniformly whenever $`|q-\bar q_L|+|k|=o(L)`$,
 
 ```math
 \ln\frac{a_{L,q}}{a_{L,q+k}}
@@ -289,12 +289,12 @@ is proved by summing adjacent logarithmic ratios in
 truncation changes charge probabilities by an exponentially small amount;
 it does not change the ranks in (17).
 
-### The budget strong converse at scale $\sqrt L$
+### The budget strong converse at scale $`\sqrt L`$
 
-For each fixed $C<\infty$, consider all integer budgets
-$0\le S\le C\sqrt L$. On
-$G_L=\{q:|q-\bar q_L|\le\sqrt L\log L\}$, equation (17) implies,
-uniformly over all $|k|\le S$,
+For each fixed $`C<\infty`$, consider all integer budgets
+$`0\le S\le C\sqrt L`$. On
+$`G_L=\{q:|q-\bar q_L|\le\sqrt L\log L\}`$, equation (17) implies,
+uniformly over all $`|k|\le S`$,
 
 ```math
 \ln\frac{a_{L,q}}{a_{L,q+k}}
@@ -302,9 +302,9 @@ uniformly over all $|k|\le S$,
 \tag{18}
 ```
 
-for some $C_1$ depending on $C,f,\nu$. The charge variance is $O(L)$,
-so the omitted mass is $O((\log L)^{-2})$, even using only Chebyshev's
-inequality. Equation (10) therefore yields constants $C_1,C_2$ for which
+for some $`C_1`$ depending on $`C,f,\nu`$. The charge variance is $`O(L)`$,
+so the omitted mass is $`O((\log L)^{-2})`$, even using only Chebyshev's
+inequality. Equation (10) therefore yields constants $`C_1,C_2`$ for which
 
 ```math
 F_L^\star(m,S;\Omega_L)
@@ -315,10 +315,10 @@ F_L^\star(m,S;\Omega_L)
 \tag{19}
 ```
 
-for all $m\ge1$, all $0\le S\le C\sqrt L$, and sufficiently large
-$L$. The bound is uniform over the implementation and target dimension.
+for all $`m\ge1`$, all $`0\le S\le C\sqrt L`$, and sufficiently large
+$`L`$. The bound is uniform over the implementation and target dimension.
 
-In particular, for every $c>0$,
+In particular, for every $`c>0`$,
 
 ```math
 \ln m_L\ge\gamma S_L+c\sqrt L,
@@ -335,9 +335,9 @@ unrestricted LOCC supplies the independent fluctuation cap; its application
 to mixed outputs and the combination of both caps are given in
 [the capacity proof](asymptotics.md).
 
-## 6. Fixed budgets and the full sub-$\sqrt L$ transition
+## 6. Fixed budgets and the full sub-$`\sqrt L`$ transition
 
-For fixed budgets the $O(\log L)$ error in (18) is too coarse. Use instead
+For fixed budgets the $`O(\log L)`$ error in (18) is too coarse. Use instead
 an adaptive window
 
 ```math
@@ -347,9 +347,9 @@ G_L=\{q:|q-\bar q_L|\le M_L\sqrt L\},
 \tag{21}
 ```
 
-Such a choice exists whenever $S_L=o(\sqrt L)$; for example use the
-minimum of $L^{1/8}$ and $(\sqrt L/(S_L+1))^{1/2}$. Its omitted
-probability is $O(M_L^{-2})=o(1)$. Equation (17) becomes
+Such a choice exists whenever $`S_L=o(\sqrt L)`$; for example use the
+minimum of $`L^{1/8}`$ and $`(\sqrt L/(S_L+1))^{1/2}`$. Its omitted
+probability is $`O(M_L^{-2})=o(1)`$. Equation (17) becomes
 
 ```math
 \ln\frac{a_{L,q}}{a_{L,q+k}}
@@ -357,11 +357,11 @@ probability is $O(M_L^{-2})=o(1)$. Equation (17) becomes
 \tag{22}
 ```
 
-uniformly for $q\in G_L$ and all $|k|\le S_L$. Here
-$\mu_L-\mu=O(L^{-1})$, so replacing $\mu_L$ is harmless.
+uniformly for $`q\in G_L`$ and all $`|k|\le S_L`$. Here
+$`\mu_L-\mu=O(L^{-1})`$, so replacing $`\mu_L`$ is harmless.
 
 **Sub-fluctuation transition.** Suppose
-$S_L=o(\sqrt L)$ and the positive integer target dimensions satisfy
+$`S_L=o(\sqrt L)`$ and the positive integer target dimensions satisfy
 
 ```math
 \ln m_L-\gamma S_L\longrightarrow c\in\mathbb R.
@@ -378,12 +378,12 @@ Then
 ```
 
 For the upper bound, (22) bounds every allowed ratio in (7) by
-$\exp(\gamma S_L-\ln m_L+o(1))$. The constant $c_G$ in (10) can
+$`\exp(\gamma S_L-\ln m_L+o(1))`$. The constant $`c_G`$ in (10) can
 therefore be chosen as
-$\sqrt{\min\{1,\exp(-c+o(1))\}}$. The tail term vanishes.
+$`\sqrt{\min\{1,\exp(-c+o(1))\}}`$. The tail term vanishes.
 
 For the lower bound, choose the favorable deterministic shift
-$k_L=-\operatorname{sgn}(\mu)S_L$ and the same window $G_L$.
+$`k_L=-\operatorname{sgn}(\mu)S_L`$ and the same window $`G_L`$.
 The ratio now has equality in its leading exponent, uniformly:
 
 ```math
@@ -393,7 +393,7 @@ The ratio now has equality in its leading exponent, uniformly:
 ```
 
 The hybrid construction's rank factor consequently tends uniformly to
-$\sqrt{\min\{1,e^{-c}\}}$. The hypergeometric shift-overlap estimate
+$`\sqrt{\min\{1,e^{-c}\}}`$. The hypergeometric shift-overlap estimate
 in [Lemma 2 of the asymptotic analysis](asymptotics.md) gives
 
 ```math
@@ -403,12 +403,12 @@ in [Lemma 2 of the asymptotic analysis](asymptotics.md) gives
 ```
 
 Removing the source tail of (21) changes this sum by at most
-$\sqrt{\Pr(Q_A\notin G_L)}$, by Cauchy–Schwarz. The physical linear
+$`\sqrt{\Pr(Q_A\notin G_L)}`$, by Cauchy–Schwarz. The physical linear
 truncation changes it by another vanishing amount. Thus (4) of
 [the construction](coherent_protocol.md) proves the matching lower bound.
 
-In particular, for fixed integers $m\ge1$ and $S\ge0$, set
-$c=\ln m-\gamma S$ to obtain
+In particular, for fixed integers $`m\ge1`$ and $`S\ge0`$, set
+$`c=\ln m-\gamma S`$ to obtain
 
 ```math
 \boxed{
@@ -417,25 +417,25 @@ $c=\ln m-\gamma S$ to obtain
 \tag{27}
 ```
 
-When $m=e^{\gamma S}$, the exponent in (25) tends to zero from either
+When $`m=e^{\gamma S}`$, the exponent in (25) tends to zero from either
 side depending on the sector. Its minimum-with-one rank factor still
 tends uniformly to one. This proves the equality boundary without
 requiring exact rank reduction in every finite-size sector. It is the
 reason the rank-deficit part of the construction is needed.
 
 The same upper and lower arguments give fidelity limits zero or one when
-the expression on the left of (23) tends respectively to $+\infty$ or
-$-\infty$. This observation yields the smaller-scale capacity limit for
-diverging $S_L=o(\sqrt L)$ stated in [the asymptotic analysis](asymptotics.md).
+the expression on the left of (23) tends respectively to $`+\infty`$ or
+$`-\infty`$. This observation yields the smaller-scale capacity limit for
+diverging $`S_L=o(\sqrt L)`$ stated in [the asymptotic analysis](asymptotics.md).
 
 ## 7. Transfer to actual Haar catalysts
 
-The physically truncated flat state $|\Omega_L\rangle$ is aligned with
-the actual Haar state $|\psi_L\rangle$ using charge-resolved Schmidt
+The physically truncated flat state $`|\Omega_L\rangle`$ is aligned with
+the actual Haar state $`|\psi_L\rangle`$ using charge-resolved Schmidt
 bases. As proved in [typical states](typical_states.md), with probability
 tending to one its purified distance
-$\zeta_L=P(\psi_L,\Omega_L)$ is exponentially small. Uniformly in
-$m,S$,
+$`\zeta_L=P(\psi_L,\Omega_L)`$ is exponentially small. Uniformly in
+$`m,S`$,
 
 ```math
 \left|
@@ -445,7 +445,7 @@ F_L^\star(m,S;\psi_L)-F_L^\star(m,S;\Omega_L)
 ```
 
 Thus (20), (24), and (27) hold for typical Haar catalysts in probability.
-In particular, the zero-exchange limit is $1/m$, although the exact
+In particular, the zero-exchange limit is $`1/m`$, although the exact
 finite-size identity (12) applies only to the flat reference. All fixed
 budget and growing-budget claims use the complete catalyst–target return
 criterion, the hard support constraint on net exchange, and known input
