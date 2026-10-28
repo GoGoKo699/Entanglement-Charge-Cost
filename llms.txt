@@ -1,0 +1,36 @@
+# Entanglement Charge Cost
+
+This repository determines the optimal hard net charge exchange for neutral-target entanglement borrowing from known typical fixed-charge Haar pure states with an unequal bipartition. It includes exact finite flat-block optimization, coherent covariant LOCC constructions, complete-outcome converses, and the transfer to physical Haar catalysts.
+
+## Scientific routes
+
+- Orientation and headline results: README.md
+- Exact systems, allowed instruments, error criterion, budget, quantifiers: science/model.md
+- Physical truncation, Haar second moments, sectorwise Schmidt alignment, uniform continuity transfer: science/typical_states.md
+- Coherent rank conversion, common outcome alphabet, both rank cases, buffer dilation: science/coherent_protocol.md
+- Adaptive Kraus-leaf converse, fixed budget, uniform sub-fluctuation bound: science/converse.md
+- Exact finite primal, shift-simplex form, dual, attainment and boundary treatment: science/finite_optimization.md
+- Hypergeometric overlap, uniform rank estimates, unrestricted benchmark, capacity limits: science/asymptotics.md
+- Physical mechanism, explicit quarter-filling example, resources and limits: science/interpretation.md
+- Closest comparisons and inherited ingredients: references/RELATED_WORK.md
+- Structured source identities and versions: references/references.bib
+- Executed finite verification, commands, expected outputs and numerical tolerance: verification/README.md
+
+## Reading suggestions
+
+For the scientific story, read model, interpretation, coherent_protocol, converse, then asymptotics and typical_states. For a proof audit, start from model, follow finite_optimization to the constructive and converse pages, and then inspect typical_states and asymptotics. For numerical reproduction, use verification/README.md and run verification/run_all.py from the repository root.
+
+## Essential distinctions
+
+- Root fidelity F and squared fidelity F^2 differ; purified error satisfies P^2=1-F^2.
+- The return criterion includes catalyst and target jointly, with all outcomes counted.
+- S bounds each complete net charge shift. A mean-only bound, intermediate traffic, and minimum reservoir size are different costs.
+- The target is neutral or encoded at unchanged definite local charge.
+- Ancillas supply no shared entanglement or coherent phase reference; charge buffers need not be returned.
+- A physical flat comparison is truncated where Bob has sufficient sector dimension. An unrestricted purification unitary is not a charge-preserving argument.
+- The typical Haar result is probabilistic and asymptotic; the zero-budget identity is exact for flat blocks.
+- The Gaussian unrestricted capacity and generic superselection-rule conversion machinery are attributed prior work.
+- At S of order sqrt(L), the capacity theorem is leading order; do not invent an exact constant-order Gaussian boundary law.
+- No efficient compilation, unknown-state decoder, equal-cut theorem, half-filled growing yield, or unconditional dynamical theorem is established.
+
+Use the topic pages as the authority for a claim rather than inferring a stronger statement from the README or a numerical example.
