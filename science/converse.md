@@ -23,7 +23,7 @@ Work first with a physically valid block-flat catalyst
 |\Omega\rangle
 =\sum_{q\in\mathcal Q}\sqrt{p_q}\,|\Phi_{d_q};q,N-q\rangle,
 \qquad p_q>0,\quad\sum_qp_q=1,
-\tag{1}
+\qquad\text{(1)}
 ```
 
 with the dimension and basis conventions of
@@ -49,7 +49,7 @@ catalysts is a product
 M_r=A_r\otimes B_r,
 \qquad
 \sum_r M_r^\dagger M_r=I.
-\tag{2}
+\qquad\text{(2)}
 ```
 
 Preparation of the neutral target registers is absorbed into $`A_r,B_r`$.
@@ -59,7 +59,7 @@ Their charge shifts add along the leaf, so
 Q_A^{\rm out}A_r-A_rQ_A^{\rm in}=k_{A,r}A_r,
 \qquad
 Q_B^{\rm out}B_r-B_rQ_B^{\rm in}=k_{B,r}B_r.
-\tag{3}
+\qquad\text{(3)}
 ```
 
 The hard budget is $`|k_{A,r}|\le S`$ on every complete leaf. It is a
@@ -81,7 +81,7 @@ For each normalized source block define
 
 ```math
 t_{r,q}=\|M_r|\Phi_{d_q};q,N-q\rangle\|^2.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 These numbers are defined for all leaves, including those whose total shift
@@ -89,7 +89,7 @@ is incompatible with the target. Trace preservation gives
 
 ```math
 \sum_r t_{r,q}=1\qquad(q\in\mathcal Q).
-\tag{5}
+\qquad\text{(5)}
 ```
 
 **Rank-overlap bound.** If an unnormalized bipartite vector has Schmidt rank
@@ -98,7 +98,7 @@ maximally entangled vector of rank $`D`$, its overlap has modulus at most
 
 ```math
 \sqrt{t}\,\sqrt{\min\{1,d/D\}}.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 To prove (6), project the vector onto the local supports of the target and
@@ -116,7 +116,7 @@ overlap only the target block $`q+k_r`$. Define
 ```math
 c_{q,k}=\sqrt{\min\left\{1,\frac{d_q}{m d_{q+k}}\right\}}
 \quad\text{if }p_{q+k}>0,
-\tag{7}
+\qquad\text{(7)}
 ```
 
 and set its weighted contribution to zero when $`p_{q+k}=0`$. Equation
@@ -126,7 +126,7 @@ and set its weighted contribution to zero when $`p_{q+k}=0`$. Equation
 |z_r|:=|\langle\tau|M_r|\Omega\rangle|
 \le\sum_{q\in\mathcal Q}
 \sqrt{p_qp_{q+k_r}}\,c_{q,k_r}\sqrt{t_{r,q}}.
-\tag{8}
+\qquad\text{(8)}
 ```
 
 This already allows arbitrary charge-dependent filtering: its effect is
@@ -135,7 +135,7 @@ the reference target is pure, the complete output satisfies
 
 ```math
 F(\rho_{\rm out},\tau)^2=\sum_r|z_r|^2.
-\tag{9}
+\qquad\text{(9)}
 ```
 
 No conditional success probability is removed from (9).
@@ -151,7 +151,7 @@ protocol obeys
 F(\rho_{\rm out},\tau)
 \le c_G\sqrt{1-\eta}+\sqrt\eta
 \le c_G+\sqrt\eta.
-\tag{10}
+\qquad\text{(10)}
 ```
 
 An overall upper bound of one may of course be imposed as well.
@@ -165,7 +165,7 @@ overlap-bearing leaf, Cauchy–Schwarz in (8) yields
 \left(\sum_{q\in G}p_q t_{r,q}\right)
 \left(\sum_{q\in G}p_{q+k_r}\right)
 \le c_G^2\sum_{q\in G}p_qt_{r,q}.
-\tag{11}
+\qquad\text{(11)}
 ```
 
 Sum over leaves and use (5). This bounds the Euclidean norm of the vector
@@ -194,7 +194,7 @@ state attains overlap $`1/\sqrt m`$. Therefore
 
 ```math
 \boxed{[F^\star(m,0;\Omega)]^2=\frac1m.}
-\tag{12}
+\qquad\text{(12)}
 ```
 
 This is exact for every finite physically valid block-flat catalyst. It
@@ -208,7 +208,7 @@ Define the nonnegative overlap coefficients
 
 ```math
 A_{kq}=\sqrt{p_qp_{q+k}}\,c_{q,k},
-\tag{13}
+\qquad\text{(13)}
 ```
 
 with $`A_{kq}=0`$ if the target weight vanishes. For each shift $`k`$, group
@@ -224,7 +224,7 @@ group gives
 ```math
 \left(\sum_{r:\,(k,-k)}|z_r|^2\right)^{1/2}
 \le\sum_q A_{kq}\sqrt{T_{kq}}.
-\tag{14}
+\qquad\text{(14)}
 ```
 
 The columns initially satisfy $`\sum_kT_{kq}\le1`$, rather than necessarily
@@ -237,7 +237,7 @@ Thus every protocol is bounded by
 ```math
 \max_{T\ge0,\ \sum_kT_{kq}=1}
 \sum_k\left(\sum_q A_{kq}\sqrt{T_{kq}}\right)^2,
-\tag{15}
+\qquad\text{(15)}
 ```
 
 with physically absent output sectors excluded from the variables. This
@@ -258,7 +258,7 @@ $`\nu_L=N_L/L`$, $`\bar q_L=n_L\nu_L`$, and
 a_{L,q}=\binom{n_L}{q},\qquad
 \mu_L=\ln\frac{1-\nu_L}{\nu_L},\qquad
 \mu=\ln\frac{1-\nu}{\nu},\qquad\gamma=|\mu|>0.
-\tag{16}
+\qquad\text{(16)}
 ```
 
 Exact integer-compatible sequences are a special case. The physical
@@ -280,7 +280,7 @@ gives, uniformly whenever $`|q-\bar q_L|+|k|=o(L)`$,
 \ln\frac{a_{L,q}}{a_{L,q+k}}
 =-\mu_L k+
 O\!\left(\frac{|k|(|q-\bar q_L|+|k|+1)}L\right).
-\tag{17}
+\qquad\text{(17)}
 ```
 
 The constant depends only on the fixed interior parameters. This estimate
@@ -299,7 +299,7 @@ uniformly over all $`|k|\le S`$,
 ```math
 \ln\frac{a_{L,q}}{a_{L,q+k}}
 \le\gamma S+C_1\log L
-\tag{18}
+\qquad\text{(18)}
 ```
 
 for some $`C_1`$ depending on $`C,f,\nu`$. The charge variance is $`O(L)`$,
@@ -312,7 +312,7 @@ F_L^\star(m,S;\Omega_L)
 \sqrt{\min\left\{1,
 \frac{e^{\gamma S+C_1\log L}}m\right\}}
 +\frac{C_2}{\log L},
-\tag{19}
+\qquad\text{(19)}
 ```
 
 for all $`m\ge1`$, all $`0\le S\le C\sqrt L`$, and sufficiently large
@@ -325,7 +325,7 @@ In particular, for every $`c>0`$,
 \qquad S_L=O(\sqrt L)
 \quad\Longrightarrow\quad
 F_L^\star(m_L,S_L;\Omega_L)\longrightarrow0.
-\tag{20}
+\qquad\text{(20)}
 ```
 
 This is the charge-budget part of the leading capacity converse. It does
@@ -344,7 +344,7 @@ an adaptive window
 G_L=\{q:|q-\bar q_L|\le M_L\sqrt L\},
 \quad M_L\to\infty,\quad M_L=o(\sqrt L),\quad
 \frac{S_LM_L}{\sqrt L}\to0.
-\tag{21}
+\qquad\text{(21)}
 ```
 
 Such a choice exists whenever $`S_L=o(\sqrt L)`$; for example use the
@@ -354,7 +354,7 @@ probability is $`O(M_L^{-2})=o(1)`$. Equation (17) becomes
 ```math
 \ln\frac{a_{L,q}}{a_{L,q+k}}
 =-\mu k+o(1),
-\tag{22}
+\qquad\text{(22)}
 ```
 
 uniformly for $`q\in G_L`$ and all $`|k|\le S_L`$. Here
@@ -365,7 +365,7 @@ $`S_L=o(\sqrt L)`$ and the positive integer target dimensions satisfy
 
 ```math
 \ln m_L-\gamma S_L\longrightarrow c\in\mathbb R.
-\tag{23}
+\qquad\text{(23)}
 ```
 
 Then
@@ -374,7 +374,7 @@ Then
 \boxed{
 [F_L^\star(m_L,S_L;\Omega_L)]^2
 \longrightarrow\min\{1,e^{-c}\}.}
-\tag{24}
+\qquad\text{(24)}
 ```
 
 For the upper bound, (22) bounds every allowed ratio in (7) by
@@ -389,7 +389,7 @@ The ratio now has equality in its leading exponent, uniformly:
 ```math
 \frac{a_{L,q}}{m_La_{L,q+k_L}}
 =\exp(-c+o(1)).
-\tag{25}
+\qquad\text{(25)}
 ```
 
 The hybrid construction's rank factor consequently tends uniformly to
@@ -399,7 +399,7 @@ in [Lemma 2 of the asymptotic analysis](asymptotics.md) gives
 ```math
 \sum_q\sqrt{p_{L,q}p_{L,q+k_L}}\longrightarrow1
 \qquad\text{when }k_L=o(\sqrt L).
-\tag{26}
+\qquad\text{(26)}
 ```
 
 Removing the source tail of (21) changes this sum by at most
@@ -414,7 +414,7 @@ $`c=\ln m-\gamma S`$ to obtain
 \boxed{
 [F_L^\star(m,S;\Omega_L)]^2
 \longrightarrow\min\{1,e^{\gamma S}/m\}.}
-\tag{27}
+\qquad\text{(27)}
 ```
 
 When $`m=e^{\gamma S}`$, the exponent in (25) tends to zero from either
@@ -441,7 +441,7 @@ $`m,S`$,
 \left|
 F_L^\star(m,S;\psi_L)-F_L^\star(m,S;\Omega_L)
 \right|\le2\zeta_L.
-\tag{28}
+\qquad\text{(28)}
 ```
 
 Thus (20), (24), and (27) hold for typical Haar catalysts in probability.

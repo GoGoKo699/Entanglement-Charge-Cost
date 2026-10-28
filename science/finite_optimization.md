@@ -45,7 +45,7 @@ Allocating probability to a destination outside the target support cannot improv
 =\max_{\substack{T_{kq}\ge0\\\sum_kT_{kq}=1\ \forall q}}
 \sum_{k\in\mathcal K}
 \left(\sum_{q\in\mathcal Q}A_{kq}\sqrt{T_{kq}}\right)^2.
-\tag{1}
+\qquad\text{(1)}
 ```
 
 The maximum exists. An optimum is attained by a finite-round, one-way LOCC protocol consisting of a charge-diagonal filter and coherent sector conversion.
@@ -62,7 +62,7 @@ Trace preservation gives $`\sum_r t_{rq}=1`$ for each $`q`$. A product Kraus ope
 
 ```math
 |z_r|\le\sum_q A_{kq}\sqrt{t_{rq}}.
-\tag{2}
+\qquad\text{(2)}
 ```
 
 This is the rank bound in [converse.md](converse.md). It also bounds a leaf with additional local environment labels, since those labels are included in the Kraus refinement.
@@ -72,7 +72,7 @@ Group overlap-bearing leaves by their shift and put $`T_{kq}=\sum_{r:k_r=k}t_{rq
 ```math
 \sum_{r:k_r=k}\left(\sum_qA_{kq}\sqrt{t_{rq}}\right)^2
 \le\left(\sum_qA_{kq}\sqrt{T_{kq}}\right)^2.
-\tag{3}
+\qquad\text{(3)}
 ```
 
 Leaves whose total shift is nonzero have zero overlap, but their probabilities must not be silently discarded. Before completing the columns, $`\sum_kT_{kq}\le1`$. Assign each column's residual to $`T_{0q}`$. All coefficients are nonnegative, so this only increases the right-hand side of (3). Summing (3) proves the upper bound in (1). The bound also holds for limits of finite-round protocols by continuity of the fidelity.
@@ -105,7 +105,7 @@ K_{r}^{(a,b)}=
 \sqrt{\frac{a}{Rb}}\sum_{\ell=0}^{b-1}
 |\ell\rangle\langle(r+\ell)\bmod a|,
 \qquad r=0,\ldots,R-1.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 Each source basis vector occurs in exactly $`Rb/a`$ selected subsets, so $`\sum_r K_r^\dagger K_r=I_a`$. Every outcome has probability $`1/R`$ on $`\Phi_a`$. Bob relabels the selected vectors and extends that correction to an isometry using neutral workspace. For $`a<b`$, use the fixed embedding $`V`$ with Alice's operators $`V/\sqrt R`$ and Bob's fixed embedding. Again the instrument is trace preserving and every outcome has probability $`1/R`$.
@@ -131,7 +131,7 @@ An exact dual is
 \min_{x_q>0}\left\{\sum_qx_q:
 \sum_q\frac{A_{kq}^2}{x_q}\le1
 \quad\forall k\in\mathcal K\right\}.
-\tag{5}
+\qquad\text{(5)}
 ```
 
 Weighted Cauchy–Schwarz proves every feasible dual upper bound:
@@ -174,7 +174,7 @@ Then
 
 ```math
 F^\star=\max_{\lambda_k\ge0,\ \sum_k\lambda_k=1}G(\lambda).
-\tag{6}
+\qquad\text{(6)}
 ```
 
 To prove this, put $`u_{kq}=\sqrt{T_{kq}}`$. Each source column has Euclidean norm one. The square root of (1) is the norm of the nonnegative vector with components $`\sum_qA_{kq}u_{kq}`$. Express that norm as a maximum over nonnegative unit vectors $`v_k`$, interchange the two compact maxima, and maximize each source column separately. Its value is $`\sqrt{\sum_kv_k^2A_{kq}^2}`$. Setting $`\lambda_k=v_k^2`$ gives (6). The function $`G`$ is concave, and the number of variables is the number of allowed shifts.
@@ -185,7 +185,7 @@ For any $`\lambda`$ with every $`z_q>0`$, define
 T_{kq}=\frac{\lambda_k A_{kq}^2}{z_q^2},\qquad
 D_k=\sum_q\frac{A_{kq}^2}{z_q},\qquad
 D_{\max}=\max_kD_k.
-\tag{7}
+\qquad\text{(7)}
 ```
 
 These give an explicit feasible filter and an explicit feasible dual point $`x_q=D_{\max}z_q`$. Thus
@@ -194,7 +194,7 @@ These give an explicit feasible filter and an explicit feasible dual point $`x_q
 \underbrace{\sum_k\lambda_kD_k^2}_{\text{attained squared fidelity}}
 \le [F^\star]^2
 \le\underbrace{D_{\max}G(\lambda)}_{\text{dual objective}}.
-\tag{8}
+\qquad\text{(8)}
 ```
 
 The identity $`\sum_k\lambda_kD_k=G(\lambda)`$ is useful for checking the calculation. At a maximizer, the simplex optimality conditions give $`D_k=G`$ on active shifts and $`D_k\le G`$ on inactive shifts. Both sides of (8) then equal $`G^2`$.

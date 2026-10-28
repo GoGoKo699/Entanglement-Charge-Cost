@@ -19,7 +19,7 @@ Keeping $`\nu_L=N_L/L`$ throughout treats both conventions. Define
 a_{L,q}=\binom{n_L}{q},\qquad
 p_{L,q}=
 \frac{\binom{n_L}{q}\binom{L-n_L}{N_L-q}}{\binom{L}{N_L}},
-\tag{1}
+\qquad\text{(1)}
 ```
 
 with $`p_{L,q}=0`$ outside its hypergeometric support, and
@@ -34,7 +34,7 @@ v&=f(1-f)\nu(1-\nu),\\
 \mu_L&=\ln\frac{1-\nu_L}{\nu_L},\qquad
 \mu=\ln\frac{1-\nu}{\nu},\qquad \gamma=|\mu|>0.
 \end{split}
-\tag{2}
+\qquad\text{(2)}
 ```
 
 The shift convention is $`k=q_{\mathrm{out}}-q_{\mathrm{in}}`$. A favorable
@@ -58,7 +58,7 @@ $`0<\epsilon<1`$, set
 ```math
 B_{\epsilon,L}(S)=
 \sup\{\log_2m:m\in\mathbb N,\ F_L(m,S)^2\ge1-\epsilon^2\}.
-\tag{3}
+\qquad\text{(3)}
 ```
 
 Limits for the ideal comparison family are deterministic. Through the
@@ -77,7 +77,7 @@ $`|q-\bar q_L|\le w_L`$ and integer $`|k|\le K_L`$,
 O\!\left(
 \frac{|k|(|q-\bar q_L|+|k|+1)}{L}
 \right).
-\tag{4}
+\qquad\text{(4)}
 ```
 
 The constant is uniform once $`f,\nu`$ are fixed in the stated open ranges.
@@ -119,7 +119,7 @@ Define the root overlap between the charge law and its integer translate by
 
 ```math
 H_L(s)=\sum_{q\in\mathbb Z}\sqrt{p_{L,q}p_{L,q-s}}.
-\tag{5}
+\qquad\text{(5)}
 ```
 
 **Lemma 2.** Uniformly over all integer shifts,
@@ -129,7 +129,7 @@ H_L(s)=\sum_{q\in\mathbb Z}\sqrt{p_{L,q}p_{L,q-s}}.
 \left|H_L(s)-
 \exp\!\left[-\frac{s^2}{8\sigma_L^2}\right]\right|
 \longrightarrow0.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 This is an absolute-error statement. It does not assert a relative error
@@ -143,7 +143,7 @@ f_L(x)=\sigma_Lp_{L,q}
 x\in
 \left[\frac{q-\bar q_L}{\sigma_L},
 \frac{q+1-\bar q_L}{\sigma_L}\right).
-\tag{7}
+\qquad\text{(7)}
 ```
 
 It integrates to one. The usual central expansion follows directly by
@@ -162,7 +162,7 @@ from Scheffé's lemma, since both are probability densities. Thus
 ```math
 d_L:=\|\sqrt{f_L}-\sqrt\phi\|_2\longrightarrow0,
 \qquad d_L^2\le\|f_L-\phi\|_1.
-\tag{8}
+\qquad\text{(8)}
 ```
 
 For $`h=s/\sigma_L`$, the cells in (7) align exactly after translation, so
@@ -201,7 +201,7 @@ The unrestricted benchmark used here is
 F_L^{\mathrm{unres}}(m_L)
 \longrightarrow
 \exp\!\left[-\frac{b^2}{8\gamma^2v}\right].
-\tag{9}
+\qquad\text{(9)}
 ```
 
 This is the Gaussian conversion law of
@@ -230,7 +230,7 @@ $`\sqrt{r_ir_j}`$. Thus
 ```math
 \sum_rw_r|\langle\mathrm{target}|\chi_r\rangle|^2
 \le\sum_rw_rg(r^{(r)})\le g(\bar r).
-\tag{10}
+\qquad\text{(10)}
 ```
 
 The last value is attainable by a deterministically reachable pure state
@@ -254,7 +254,7 @@ Put
 
 ```math
 t_\epsilon=2\sqrt{-\ln(1-\epsilon^2)}.
-\tag{11}
+\qquad\text{(11)}
 ```
 
 **Theorem 3.** For any integer budgets $`S_L\ge0`$ such that
@@ -265,7 +265,7 @@ $`S_L/\sqrt L\to\alpha\in[0,\infty]`$,
 =
 \frac{\gamma}{\ln2}
 \min\{\alpha,\sqrt v\,t_\epsilon\}.
-\tag{12}
+\qquad\text{(12)}
 ```
 
 Equivalently, along each such sequence,
@@ -274,7 +274,7 @@ Equivalently, along each such sequence,
 B_{\epsilon,L}(S_L)
 =\frac{\gamma}{\ln2}
 \min\{S_L,\sigma_Lt_\epsilon\}+o(\sqrt L).
-\tag{13}
+\qquad\text{(13)}
 ```
 
 For Haar catalysts the displayed convergence is in probability and the
@@ -289,7 +289,7 @@ On the window $`|q-\bar q_L|\le\sqrt L\log L`$, Lemma 1 gives
 \sup_{|k|\le S_L}
 \ln\frac{a_{L,q}}{a_{L,q+k}}
 \le\gamma S_L+O_C(\log L).
-\tag{14}
+\qquad\text{(14)}
 ```
 
 The rank-overlap bound in [the converse](converse.md), summed over all
@@ -298,7 +298,7 @@ charge-resolved leaves, yields
 ```math
 F_L(m,S_L)\le
 \sqrt{\min\{1,e^{\gamma S_L+O_C(\log L)}/m\}}+o(1).
-\tag{15}
+\qquad\text{(15)}
 ```
 
 The last term includes the norm of the excluded input tail and does not
@@ -322,7 +322,7 @@ Otherwise, fix any
 
 ```math
 0<b<\gamma\min\{\alpha,\sqrt v\,t_\epsilon\}.
-\tag{16}
+\qquad\text{(16)}
 ```
 
 Choose $`m_L=\lfloor e^{b\sqrt L}\rfloor`$ and, after particle-hole
@@ -333,7 +333,7 @@ s_L=
 \left\lceil
 \frac{\ln m_L}{|\mu_L|}+(\log L)^2
 \right\rceil.
-\tag{17}
+\qquad\text{(17)}
 ```
 
 The slack diverges and is $`o(\sqrt L)`$.
@@ -346,7 +346,7 @@ $`|q-\bar q_L|\le\sqrt L\log L`$, its rank surplus satisfies
 {m_La_{L,q-\operatorname{sgn}(\mu)s_L}}
 \ge |\mu_L|(\log L)^2-O(\log L)
 \longrightarrow+\infty.
-\tag{18}
+\qquad\text{(18)}
 ```
 
 All these sectors therefore admit exact rank reduction to the desired
@@ -358,7 +358,7 @@ contribution vanishes. Lemma 2 gives
 \liminf F_L(m_L,S_L)
 \ge\exp\!\left[-\frac{b^2}{8\gamma^2v}\right]
 >\sqrt{1-\epsilon^2}.
-\tag{19}
+\qquad\text{(19)}
 ```
 
 Thus $`m_L`$ is feasible eventually. Letting $`b`$ approach the right
@@ -386,7 +386,7 @@ one has
 
 ```math
 F_L(m_L,S_L)^2\longrightarrow \min\{1,e^{-c}\}.
-\tag{20}
+\qquad\text{(20)}
 ```
 
 Lemma 1 with the adaptive $`M_L`$ window gives the uniformly accurate rank
@@ -395,7 +395,7 @@ factor, and Lemma 2 gives $`H_L(S_L)\to1`$. For fixed $`S,m`$, (20) is
 ```math
 F_L(m,S)^2\longrightarrow
 \min\{1,e^{\gamma S}/m\}.
-\tag{21}
+\qquad\text{(21)}
 ```
 
 For an exactly charge-block-flat catalyst at $`S=0`$, the identity
@@ -408,7 +408,7 @@ $`0<\epsilon<1`$,
 ```math
 \frac{B_{\epsilon,L}(S_L)}{S_L}
 \longrightarrow\frac{\gamma}{\ln2}.
-\tag{22}
+\qquad\text{(22)}
 ```
 
 Indeed, a favorable shift $`s_L=S_L`$ and

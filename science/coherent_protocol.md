@@ -43,7 +43,7 @@ The known catalyst is
 \qquad
 |\Phi_{d_q};q,N-q\rangle
 =\frac1{\sqrt{d_q}}\sum_{i=0}^{d_q-1}|q,i\rangle_A|N-q,i\rangle_B.
-\tag{1}
+\qquad\text{(1)}
 ```
 
 Unwritten weights are zero. The target registers are neutral and initially
@@ -56,7 +56,7 @@ $`|\Theta_{q'}\rangle`$. Thus
 
 ```math
 |\tau\rangle=\sum_{q'\in\mathcal Q}\sqrt{p_{q'}}\,|\Theta_{q'}\rangle.
-\tag{2}
+\qquad\text{(2)}
 ```
 
 These are actual vectors in the physical Hilbert space, not formal Schmidt
@@ -77,7 +77,7 @@ and changes the local buffers by the opposite amounts. Define
 ```math
 a_q=d_q,\qquad D_{q,k}=m d_{q+k},\qquad
 c_{q,k}=\sqrt{\min\{1,a_q/D_{q,k}\}}.
-\tag{3}
+\qquad\text{(3)}
 ```
 
 **Fixed-shift construction.** There is a charge-conserving LOCC implementation
@@ -87,7 +87,7 @@ unconditional root fidelity satisfies
 ```math
 F(\rho_{\mathrm{out}},\tau)
 \ge\sum_{q\in T}\sqrt{p_qp_{q+k}}\,c_{q,k}.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 Every measurement outcome is included. In particular, the probability of
@@ -105,7 +105,7 @@ K_j=\frac1{\sqrt b}
 \sum_{\ell=0}^{b-1}|\ell\rangle
 \langle j+\ell\pmod a|,
 \qquad j=0,\ldots,a-1.
-\tag{5}
+\qquad\text{(5)}
 ```
 
 Each input basis vector belongs to exactly $`b`$ cyclic subsets, so
@@ -129,7 +129,7 @@ K_{r,q}
 \sum_{\ell=0}^{D_{q,k}-1}
 |q+k,\ell\rangle_{AA'}
 \langle q,j_q(r)+\ell\pmod{a_q}|_A.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 The output ket uses the coordinates of the target block (2). Repeating each
@@ -142,7 +142,7 @@ If $`a_q<D_{q,k}`$, use instead
 ```math
 K_{r,q}=\frac1{\sqrt R}
 \sum_{i=0}^{a_q-1}|q+k,i\rangle_{AA'}\langle q,i|_A.
-\tag{7}
+\qquad\text{(7)}
 ```
 
 Bob embeds the same $`a_q`$ basis vectors into the first $`a_q`$ coordinates
@@ -155,7 +155,7 @@ $`|\chi_{q,k}\rangle=|\Theta_{q+k}\rangle`$. In both cases,
 \qquad
 (K_{r,q}\otimes V_{r,q})|\Phi_{a_q}\rangle
 =\frac1{\sqrt R}|\chi_{q,k}\rangle.
-\tag{8}
+\qquad\text{(8)}
 ```
 
 The vector in a deficit sector need not factor into a returned catalyst and
@@ -169,7 +169,7 @@ no cross terms in $`K_r^\dagger K_r`$, and
 
 ```math
 \sum_rK_r^\dagger K_r=\Pi_T,
-\tag{9}
+\qquad\text{(9)}
 ```
 
 where $`\Pi_T`$ projects onto the selected Alice Schmidt subspaces. This
@@ -188,7 +188,7 @@ in (8). Its initial projection is
 
 ```math
 V_r^\dagger V_r=P_r,
-\tag{10}
+\qquad\text{(10)}
 ```
 
 and its charge shift is $`-k`$. There is enough output dimension because
@@ -201,7 +201,7 @@ without changing Bob's catalyst. The two Kraus operators
 
 ```math
 V_r,\qquad C_r=J_B(I-P_r)
-\tag{11}
+\qquad\text{(11)}
 ```
 
 define a trace-preserving channel, since their adjoint products sum to the
@@ -221,7 +221,7 @@ normalized input is
 |\Psi_{r,k}\rangle
 =\frac1{\sqrt R}
 \sum_{q\in T}\sqrt{p_q}\,|\chi_{q,k}\rangle.
-\tag{12}
+\qquad\text{(12)}
 ```
 
 Each such outcome has probability $`p_T/R`$, where
@@ -235,7 +235,7 @@ Equations (2), (8), and (12) give
 ```math
 \sum_{r=0}^{R-1}|\langle\tau|\Psi_{r,k}\rangle|^2
 =\left(\sum_{q\in T}\sqrt{p_qp_{q+k}}\,c_{q,k}\right)^2.
-\tag{13}
+\qquad\text{(13)}
 ```
 
 Other outcomes add nonnegative terms to the squared fidelity. Taking the
@@ -249,7 +249,7 @@ Every successful Alice Kraus operator obeys
 
 ```math
 Q_A^{\mathrm{out}}K_r-K_rQ_A^{\mathrm{in}}=kK_r.
-\tag{14}
+\qquad\text{(14)}
 ```
 
 Bob's successful correction has the opposite mode. More generally, a
@@ -259,7 +259,7 @@ shifts $`k_j`$ has a charge-conserving isometric dilation
 ```math
 W|\varphi\rangle|E\rangle_R
 =\sum_j M_j|\varphi\rangle\,|E-k_j\rangle_R\,|j\rangle_C.
-\tag{15}
+\qquad\text{(15)}
 ```
 
 The outcome register $`C`$ is neutral. Completeness makes $`W`$ an isometry;
@@ -293,7 +293,7 @@ uses the charge-diagonal filter
 
 ```math
 D_k=\bigoplus_{q\in\mathcal Q}\sqrt{T_{kq}}\,I_{d_q}.
-\tag{16}
+\qquad\text{(16)}
 ```
 
 This first operation has zero charge shift. After announcing $`k`$, the
@@ -308,7 +308,7 @@ Its full contribution to squared fidelity is
 \sqrt{\min\left\{1,\frac{d_q}{m d_{q+k}}\right\}}
 \sqrt{T_{kq}}
 \right)^2.
-\tag{17}
+\qquad\text{(17)}
 ```
 
 If a destination is physically present but has zero target weight,
